@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://e.erw.cc/all.xml"
+#EXTM3U
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" group-title="央视",CCTV1 综合
 http://39.134.144.6:8089/PLTV/88888888/224/3221225859/index.m3u8

@@ -2,6 +2,7 @@ USER-AGENT,MicroMessenger Client
 
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,msstatic.com
+DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tencent-cloud.net
@@ -33,6 +34,8 @@ DOMAIN-SUFFIX,tbcache.com
 DOMAIN-SUFFIX,hypercachenode.com
 DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilicomic.com
+DOMAIN-SUFFIX,biligame.com
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,hdslb.com

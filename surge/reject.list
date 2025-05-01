@@ -1,5 +1,7 @@
 DOMAIN,hw-v2-web-player-tracker.biliapi.net
 
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+
 DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-KEYWORD,firebase,REJECT
 DOMAIN-KEYWORD,analytics,REJECT

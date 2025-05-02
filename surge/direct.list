@@ -6,7 +6,6 @@ DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,aliyuncs.com
-DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,elemecdn.com
@@ -34,6 +33,9 @@ DOMAIN-SUFFIX,biligame.com
 DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,bilivideo.com
 #
+DOMAIN-SUFFIX,smtcdns.com
+DOMAIN-SUFFIX,bytecdn.com
+DOMAIN-SUFFIX,bdurl.net
 DOMAIN-SUFFIX,bytetos.com
 DOMAIN-SUFFIX,bytescm.com
 DOMAIN-SUFFIX,byteimg.com
@@ -89,10 +91,10 @@ DOMAIN-SUFFIX,ifanr.com
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,appinn.com
 DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,duozhuayu.com
 #
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,cn
 #
 DOMAIN-KEYWORD,apple
-DOMAIN-KEYWORD,alipay
 DOMAIN-KEYWORD,icloud

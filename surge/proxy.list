@@ -115,6 +115,7 @@ DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,appcenter.ms
+DOMAIN-SUFFIX,oisd.nl
 # Keyword
 DOMAIN-KEYWORD,fastly
 DOMAIN-KEYWORD,google

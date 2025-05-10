@@ -1,7 +1,6 @@
 # Bilibili
 DOMAIN,bfs
 DOMAIN-SUFFIX,mcdn.bilivideo.cn
-DOMAIN-KEYWORD,player-tracker
 
 # SmartThings
 DOMAIN,av.samsungiotcloud.cn
@@ -13,9 +12,10 @@ DOMAIN,route-stats.d.meituan.net
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 
-# AD,SDK
+# Simple
 DOMAIN-KEYWORD,umeng
 DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,tracker
 DOMAIN-KEYWORD,firebase
 DOMAIN-KEYWORD,appsflyer
 DOMAIN-KEYWORD,analytics

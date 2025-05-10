@@ -1,5 +1,5 @@
-USER-AGENT,MicroMessenger Client
-#
+USER-AGENT,"MicroMessenger Client"
+# Ali
 DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,aliyun.com
 DOMAIN-SUFFIX,alipay.com
@@ -15,16 +15,15 @@ DOMAIN-SUFFIX,koubei.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,taopiaopiao.com
 DOMAIN-SUFFIX,mmstat.com
-#
+# Tencent
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tencent-cloud.net
-DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,msstatic.com
 DOMAIN-SUFFIX,servicewechat.com
-#
+# Bili
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,biliimg.com
@@ -32,8 +31,7 @@ DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,biligame.com
 DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,bilivideo.com
-#
-DOMAIN-SUFFIX,smtcdns.com
+# Bytedance
 DOMAIN-SUFFIX,bytecdn.com
 DOMAIN-SUFFIX,bdurl.net
 DOMAIN-SUFFIX,bytetos.com
@@ -55,20 +53,23 @@ DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,qishui.com
-DOMAIN-SUFFIX,smtcdns.net
 DOMAIN-SUFFIX,tbcache.com
 DOMAIN-SUFFIX,ibytedapm.com
 DOMAIN-SUFFIX,hypercachenode.com
 DOMAIN-SUFFIX,zijieapi.com
-#
+# Apple
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,mzstatic.com
-#
+# Other
 DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bcebos.com
+DOMAIN-SUFFIX,mediav.com
 DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,baidustatic.com
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,zhihu.com
@@ -91,10 +92,13 @@ DOMAIN-SUFFIX,ifanr.com
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,appinn.com
 DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,qidian.com
+DOMAIN-SUFFIX,yuewen.com
 DOMAIN-SUFFIX,duozhuayu.com
-#
-DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,alookweb.com
+DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,cn
-#
+# Keyword
 DOMAIN-KEYWORD,apple
 DOMAIN-KEYWORD,icloud
+DOMAIN-KEYWORD,samsung

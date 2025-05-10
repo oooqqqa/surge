@@ -1,19 +1,23 @@
-# Bilibili STUN
-DOMAIN,hw-v2-web-player-tracker.biliapi.net
+# Bilibili
+DOMAIN,bfs
 DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-KEYWORD,player-tracker
 
-# SmartThings Bug
+# SmartThings
 DOMAIN,av.samsungiotcloud.cn
 
-# Meituan Bug
+# Meituan
 DOMAIN,ntp.nasa.gov
 DOMAIN,al-log.d.meituan.net
 DOMAIN,route-stats.d.meituan.net
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 
-#
-DOMAIN-KEYWORD,umeng,REJECT
-DOMAIN-KEYWORD,firebase,REJECT
-DOMAIN-KEYWORD,analytics,REJECT
-DOMAIN-KEYWORD,doubleclick,REJECT
+# AD,SDK
+DOMAIN-KEYWORD,umeng
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,firebase
+DOMAIN-KEYWORD,appsflyer
+DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,doubleclick
+DOMAIN-KEYWORD,safebrowsing

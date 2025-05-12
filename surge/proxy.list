@@ -117,7 +117,8 @@ DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,appcenter.ms
 DOMAIN-SUFFIX,oisd.nl
+DOMAIN-SUFFIX,fastly.io
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,fastly.com
 # Keyword
-DOMAIN-KEYWORD,fastly
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,amazon

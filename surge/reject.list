@@ -11,13 +11,3 @@ DOMAIN,al-log.d.meituan.net
 DOMAIN,route-stats.d.meituan.net
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
-
-# Simple
-DOMAIN-KEYWORD,umeng
-DOMAIN-KEYWORD,sentry
-DOMAIN-KEYWORD,tracker
-DOMAIN-KEYWORD,firebase
-DOMAIN-KEYWORD,appsflyer
-DOMAIN-KEYWORD,analytics
-DOMAIN-KEYWORD,doubleclick
-DOMAIN-KEYWORD,safebrowsing

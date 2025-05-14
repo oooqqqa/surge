@@ -1,51 +1,34 @@
-// Quantumult X resource-parser.js
-// 用于将 Surge Rule Set 转换为 Quantumult X 支持格式
-// 支持类型：DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, IP-CIDR, IP-CIDR6, IP-ASN
+/**
+ * @fileoverview 将 Surge 规则集转换为 Quantumult X 支持的规则格式
+ * @supported Quantumult X (v1.0.8-build253)
+ */
 
-(async () => {
-  if (typeof $resource === "undefined") {
-    console.log("请在 Quantumult X 中使用该脚本");
-    return;
+// 读取输入内容并按行拆分
+const lines = $resource.content.split(/\r?\n/);
+const output = [];
+
+// 定义 Surge 到 Quantumult X 规则类型的映射
+const typeMap = {
+  'DOMAIN':        'host',        // 精确域名匹配
+  'DOMAIN-SUFFIX': 'host-suffix', // 后缀域名匹配
+  'DOMAIN-KEYWORD':'host-keyword',// 关键字域名匹配
+  'IP-CIDR':       'ip-cidr',     // IPv4 CIDR 匹配
+  'IP-CIDR6':      'ip6-cidr',    // IPv6 CIDR 匹配
+  'IP-ASN':        'ip-asn'       // ASN 匹配
+};
+
+// 遍历每行，过滤注释与空行，转换规则
+for (let raw of lines) {
+  let line = raw.trim();
+  if (!line || line.startsWith('#') || line.startsWith('//') || line.startsWith(';')) continue;
+  const parts = line.split(',').map(p => p.trim());
+  const key = (parts[0] || '').toUpperCase();
+  const target = parts[1];
+  // 如果为支持的 Surge 规则类型，则转换
+  if (typeMap[key] && target) {
+    output.push(`${typeMap[key]}, ${target}, proxy`);
   }
+}
 
-  const POLICY = "proxy"; // 默认策略，可修改
-
-  const raw = $resource.content;
-  if (!raw) $done("");
-
-  const lines = raw.split("\n");
-
-  const output = lines.map((line) => {
-    const trimmed = line.trim();
-
-    // 跳过空行或注释
-    if (!trimmed || trimmed.startsWith("#") || trimmed.startsWith(";")) {
-      return "";
-    }
-
-    const parts = trimmed.split(",");
-    if (parts.length < 2) return "";
-
-    const type = parts[0].trim().toUpperCase();
-    const value = parts[1].trim();
-
-    switch (type) {
-      case "DOMAIN-SUFFIX":
-        return `host-suffix, ${value}, ${POLICY}`;
-      case "DOMAIN":
-        return `host, ${value}, ${POLICY}`;
-      case "DOMAIN-KEYWORD":
-        return `host-keyword, ${value}, ${POLICY}`;
-      case "IP-CIDR":
-        return `ip-cidr, ${value}, ${POLICY}`;
-      case "IP-CIDR6":
-        return `ip6-cidr, ${value}, ${POLICY}`;
-      case "IP-ASN":
-        return `ip-asn, ${value}, ${POLICY}`;
-      default:
-        return "";
-    }
-  }).filter(Boolean);
-
-  $done(output.join("\n"));
-})();
+// 返回转换后结果
+$done({ content: output.join('\n') });

@@ -1,0 +1,32 @@
+name: Update Adblock Rules
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天凌晨 2 点 UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run filter_lists_merge.sh
+        run: bash config/surge/filter_lists_merge.sh
+
+      - name: Commit and push changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add config/surge/reject.txt
+            git commit -m "update adblock rules"
+            git push
+          else
+            echo "No changes to commit."
+          fi

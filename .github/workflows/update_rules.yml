@@ -23,10 +23,10 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add surge/reject.txt
-            git commit -m "update adblock rules"
-            git push
-          else
+          git add -A
+          if git diff --cached --quiet; then
             echo "No changes to commit."
+          else
+            git commit -m "Update adblock rules"
+            git push
           fi

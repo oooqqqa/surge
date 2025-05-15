@@ -49,7 +49,7 @@ L4=$(wc -l < "$PROC4")
 TOTAL=$((L1 + L2 + L4))
 
 #—— 合并并去重 ——#
-OUTPUT="reject.txt"
+OUTPUT="surge/reject.txt"
 awk '!seen[$0]++' "$PROC1" "$PROC2" "$PROC4" > "$OUTPUT"
 DEDUP=$(wc -l < "$OUTPUT")
 

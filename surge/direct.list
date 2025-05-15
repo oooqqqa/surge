@@ -93,7 +93,6 @@ DOMAIN-SUFFIX,dianping.com
 DOMAIN-SUFFIX,ifanr.com
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,appinn.com
-DOMAIN-SUFFIX,chinamobile.com
 DOMAIN-SUFFIX,qidian.com
 DOMAIN-SUFFIX,yuewen.com
 DOMAIN-SUFFIX,duozhuayu.com
@@ -102,6 +101,7 @@ DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,ks-cdn.com
 DOMAIN-SUFFIX,mwcname.com
 DOMAIN-SUFFIX,alikunlun.net
+DOMAIN-SUFFIX,ntp.org
 DOMAIN-SUFFIX,cn
 # Keyword
 DOMAIN-KEYWORD,apple

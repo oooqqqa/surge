@@ -69,6 +69,9 @@ DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,discord.gg
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discordapp.com
+# Epg
+DOMAIN-SUFFIX,e.erw.cc
+DOMAIN-SUFFIX,epg.aptv.app
 # Other
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,quantumult.app
@@ -120,9 +123,8 @@ DOMAIN-SUFFIX,oisd.nl
 DOMAIN-SUFFIX,fastly.io
 DOMAIN-SUFFIX,fastly.net
 DOMAIN-SUFFIX,fastly.com
+DOMAIN-SUFFIX,fastly-edge.com
 DOMAIN-SUFFIX,rc-backup.com
-# Epg
-DOMAIN-SUFFIX,e.erw.cc
-DOMAIN-SUFFIX,epg.aptv.app
+DOMAIN-SUFFIX,akamai.net
 # Keyword
 DOMAIN-KEYWORD,google

@@ -1,13 +1,4 @@
-# Bilibili
-DOMAIN-SUFFIX,bfs
-DOMAIN-SUFFIX,mcdn.bilivideo.cn
-
-# SmartThings
-DOMAIN,av.samsungiotcloud.cn
-
 # Meituan
 DOMAIN,ntp.nasa.gov
-DOMAIN,al-log.d.meituan.net
-DOMAIN,route-stats.d.meituan.net
-DOMAIN,metrics-picture.d.meituan.net
-DOMAIN,maplocatesdksnapshot.d.meituan.net
+# SmartThings
+DOMAIN,av.samsungiotcloud.cn

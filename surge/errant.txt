@@ -1,0 +1,2 @@
+ntp.nasa.gov
+av.samsungiotcloud.cn

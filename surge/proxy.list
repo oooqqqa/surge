@@ -17,11 +17,11 @@ DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,twitchcdn.net
 
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,tiktok
 DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,discord
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,instagram
-DOMAIN-KEYWORD,cloudflare

@@ -22,6 +22,8 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,economist.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,doubleclick.com
 
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,github

@@ -13,7 +13,7 @@ function parseParams(url) {
   }, {});
 }
 
-const params = parseParams($resource.url || '');
+const params = parseParams($resource.link || '');
 const policy = params['policy'] || 'proxy';
 const useDomainSet = params['domain-set'] === 'true';
 

@@ -2,3 +2,4 @@ DOMAIN,ntp.nasa.gov
 DOMAIN,av.samsungiotcloud.cn
 DOMAIN,safebrowsing.urlsec.qq.com
 DOMAIN,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,jddebug.com

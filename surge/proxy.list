@@ -24,6 +24,8 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,economist.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,doubleclick.com
+DOMAIN-SUFFIX,jp
+DOMAIN-SUFFIX,tw
 
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,github

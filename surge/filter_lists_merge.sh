@@ -10,7 +10,8 @@ safebrowsing.googleapis.com"
 
 # 定义下载链接
 URL1="https://big.oisd.nl/"
-URL2="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"
+# URL2="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"
+URL2="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"
 URL3="https://raw.githubusercontent.com/geekdada/surge-list/refs/heads/master/domain-set/dns-filter.txt"
 URL4="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-surge2.txt"
 

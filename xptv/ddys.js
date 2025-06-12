@@ -7,12 +7,12 @@ const headers = {
 }
 
 const appConfig = {
-  ver: 1,
+  ver: 2,
   title: "低端影视",
-  site: 'https://ddys.pro/',
+  site: "https://ddys.pro/",
   tabs: [
-    { name: '首页', ext: { url: '/' } },
-    { name: '所有电影', ext: { url: '/category/movie/' } },
+    { name: '首页', ext: { url: '/', filterable: false } },
+    { name: '所有电影', ext: { url: '/category/movie/', filterable: true } },
     { name: '连载剧集', ext: { url: '/category/airing/', hasMore: false } },
     { name: '本季新番', ext: { url: '/category/anime/new-bangumi/', hasMore: false } },
     { name: '动画', ext: { url: '/category/anime/' } },
@@ -27,6 +27,15 @@ const appConfig = {
   ]
 }
 
+async function fetchWithRetry(url, options = {}) {
+  for (let i = 0; i < 2; i++) {
+    try {
+      return await $fetch.get(url, options);
+    } catch (e) {}
+  }
+  return { data: '' };
+}
+
 async function getConfig() {
   return jsonify(appConfig)
 }
@@ -37,22 +46,20 @@ async function getCards(ext) {
   let url = ext.url
   let page = ext.page || 1
   let hasMore = ext.hasMore !== false
+  let filter = ext.filter || ''
 
   if (!hasMore && page > 1) {
-    return jsonify({ list: cards })
+    return jsonify({ list: cards, hasMore: false })
   }
 
-  url = appConfig.site + url + `/page/${page}/`
-  let data = ''
-  try {
-    const res = await $fetch.get(url, { headers })
-    data = res.data
-  } catch (err) {
-    return jsonify({ list: [] })
-  }
+  let fullUrl = appConfig.site + url + (filter ? filter : '') + `/page/${page}/`
+  const res = await fetchWithRetry(fullUrl, { headers })
+  const data = res.data
+  if (!data) return jsonify({ list: [], hasMore: false })
 
   const $ = cheerio.load(data)
-  $('article.post').each((_, each) => {
+  const items = $('article.post')
+  items.each((_, each) => {
     const style = $(each).find('.post-box-image').attr('style') || ''
     const match = style.match(/url\(["']?(.*?)["']?\)/)
     cards.push({
@@ -64,7 +71,8 @@ async function getCards(ext) {
     })
   })
 
-  return jsonify({ list: cards })
+  const nextPageExists = items.length >= 10
+  return jsonify({ list: cards, hasMore: nextPageExists })
 }
 
 async function getTracks(ext) {
@@ -72,13 +80,9 @@ async function getTracks(ext) {
   let groups = [];
   let url = ext.url;
 
-  let data = ''
-  try {
-    const res = await $fetch.get(url, { headers });
-    data = res.data;
-  } catch (err) {
-    return jsonify({ list: [] });
-  }
+  const res = await fetchWithRetry(url, { headers });
+  const data = res.data;
+  if (!data) return jsonify({ list: [] });
 
   const $ = cheerio.load(data);
   const seasonNumbers = [];
@@ -88,40 +92,40 @@ async function getTracks(ext) {
   });
 
   if (seasonNumbers.length === 0) {
-    let group = { title: '在线', tracks: [] }
-    const trackText = $('script.wp-playlist-script').text()
+    const trackText = $('script.wp-playlist-script').text();
     try {
-      const tracks = JSON.parse(trackText).tracks || []
-      tracks.forEach(each => {
-        group.tracks.push({
-          name: each.caption || '未命名',
-          pan: '',
-          ext: each
-        })
-      })
-    } catch {}
-    if (group.tracks.length > 0) groups.push(group)
-  } else {
-    for (const season of seasonNumbers) {
-      const seasonUrl = `${url}${season}/`
-      let seasonData = ''
-      try {
-        const res = await $fetch.get(seasonUrl, { headers })
-        seasonData = res.data
-      } catch { continue }
-
-      const season$ = cheerio.load(seasonData);
-      const trackText = season$('script.wp-playlist-script').text()
-      try {
-        const tracks = JSON.parse(trackText).tracks || []
+      const tracks = JSON.parse(trackText).tracks || [];
+      if (tracks.length > 0) {
         groups.push({
-          title: `第${season}季`,
+          title: '在线',
           tracks: tracks.map(each => ({
             name: each.caption || '未命名',
             pan: '',
             ext: each
           }))
         })
+      }
+    } catch {}
+  } else {
+    for (const season of seasonNumbers) {
+      const seasonUrl = `${url}${season}/`
+      const res2 = await fetchWithRetry(seasonUrl, { headers })
+      const seasonData = res2.data;
+      if (!seasonData) continue;
+      const season$ = cheerio.load(seasonData);
+      const trackText = season$('script.wp-playlist-script').text();
+      try {
+        const tracks = JSON.parse(trackText).tracks || []
+        if (tracks.length > 0) {
+          groups.push({
+            title: `第${season}季`,
+            tracks: tracks.map(each => ({
+              name: each.caption || '未命名',
+              pan: '',
+              ext: each
+            }))
+          })
+        }
       } catch {}
     }
   }
@@ -163,16 +167,12 @@ async function search(ext) {
   let cards = []
   let text = encodeURIComponent(ext.text || '')
   let page = ext.page || 1
-  if (!text || page > 1) return jsonify({ list: cards })
+  if (!text) return jsonify({ list: [] })
 
-  const url = appConfig.site + `/?s=${text}&post_type=post`
-  let data = ''
-  try {
-    const res = await $fetch.get(url, { headers })
-    data = res.data
-  } catch (err) {
-    return jsonify({ list: [] })
-  }
+  let url = appConfig.site + (page > 1 ? `/page/${page}/?s=${text}` : `/?s=${text}&post_type=post`)
+  const res = await fetchWithRetry(url, { headers })
+  const data = res.data
+  if (!data) return jsonify({ list: [] })
 
   const $ = cheerio.load(data)
   $('article.post').each((_, each) => {
@@ -187,5 +187,6 @@ async function search(ext) {
     })
   })
 
-  return jsonify({ list: cards })
+  const hasMore = cards.length >= 10
+  return jsonify({ list: cards, hasMore })
 }

@@ -84,7 +84,9 @@ async function getTracks(ext) {
       seasonNumbers.push(text);
     }
   }
-
+  /**
+   * TODO: Improved loading speed for multiple seasons.
+   */
   if (seasonNumbers.length > 0) {
     for (let i = 0; i < seasonNumbers.length; i++) {
       const season = seasonNumbers[i];

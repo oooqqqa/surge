@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/kuke31/xmlgz/refs/heads/main/all.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/kuke31/xmlgz/refs/heads/main/all.xml"
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV1.png" group-title="央视频道",CCTV1综合
 http://39.134.144.6:8089/PLTV/88888888/224/3221225859/index.m3u8

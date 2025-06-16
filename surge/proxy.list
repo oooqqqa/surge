@@ -14,19 +14,15 @@ DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
-DOMAIN-SUFFIX,trakt.tv
-DOMAIN-SUFFIX,tmdb.org
-DOMAIN-SUFFIX,thetvdb.com
-DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,economist.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,doubleclick.com
-DOMAIN-SUFFIX,jp
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,tw
 
+DOMAIN-KEYWORD,amazon
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,github
-DOMAIN-KEYWORD,discord
+DOMAIN-KEYWORD,facebook

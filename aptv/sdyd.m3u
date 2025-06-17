@@ -8,6 +8,10 @@ http://39.134.144.6:8089/PLTV/88888888/224/3221225751/index.m3u8
 http://39.134.144.6:8089/PLTV/88888888/224/3221226338/index.m3u8
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4.png" group-title="央视频道",CCTV4中文国际
 http://39.134.144.6:8089/PLTV/88888888/224/3221225757/index.m3u8
+#EXTINF:-1 tvg-id="19" tvg-name="CCTV4欧洲" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4oz.png" group-title="央视频道",CCTV4中文国际欧洲
+http://39.134.144.6:8089/PLTV/88888888/224/3221226318/index.m3u8
+#EXTINF:-1 tvg-id="20" tvg-name="CCTV4美洲" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4mz.png" group-title="央视频道",CCTV4中文国际美洲
+http://39.134.144.6:8089/PLTV/88888888/224/3221226395/index.m3u8
 #EXTINF:-1 tvg-id="5" tvg-name="CCTV5" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV5.png" group-title="央视频道",CCTV5体育
 http://39.134.144.6:8089/PLTV/88888888/224/3221226425/index.m3u8
 #EXTINF:-1 tvg-id="6" tvg-name="CCTV5+" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV5+.png" group-title="央视频道",CCTV5+体育赛事
@@ -34,12 +38,10 @@ http://39.134.144.6:8089/PLTV/88888888/224/3221225765/index.m3u8
 http://39.134.144.6:8089/PLTV/88888888/224/3221226409/index.m3u8
 #EXTINF:-1 tvg-id="18" tvg-name="CCTV17" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV17.png" group-title="央视频道",CCTV17农村农业
 http://39.134.144.6:8089/PLTV/88888888/224/3221226093/index.m3u8
-#EXTINF:-1 tvg-id="19" tvg-name="CCTV4欧洲" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4oz.png" group-title="央视频道",CCTV4欧洲
-http://39.134.144.6:8089/PLTV/88888888/224/3221226318/index.m3u8
-#EXTINF:-1 tvg-id="20" tvg-name="CCTV4美洲" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4mz.png" group-title="央视频道",CCTV4美洲
-http://39.134.144.6:8089/PLTV/88888888/224/3221226395/index.m3u8
 #EXTINF:-1 tvg-id="26" tvg-name="CCTV4K" tvg-logo="https://pic.erw.cc/epglogo/cctv/CCTV4k.png" group-title="央视频道",CCTV4K超高清
 http://39.134.144.6:8089/PLTV/88888888/224/3221226615/index.m3u8
+#EXTINF:-1 tvg-id="25" tvg-name="CGTN" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTN.png" group-title="央视频道",CGTN
+http://39.134.144.6:8089/PLTV/88888888/224/3221226320/index.m3u8
 #EXTINF:-1 tvg-id="21" tvg-name="CGTN西语" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTNesp.png" group-title="央视频道",CGTN西语
 http://39.134.144.6:8089/PLTV/88888888/224/3221226324/index.m3u8
 #EXTINF:-1 tvg-id="22" tvg-name="CGTN法语" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTNFfra.png" group-title="央视频道",CGTN法语
@@ -48,8 +50,6 @@ http://39.134.144.6:8089/PLTV/88888888/224/3221226399/index.m3u8
 http://39.134.144.6:8089/PLTV/88888888/224/3221226326/index.m3u8
 #EXTINF:-1 tvg-id="24" tvg-name="CGTN阿语" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTNalb.png" group-title="央视频道",CGTN阿语
 http://39.134.144.6:8089/PLTV/88888888/224/3221226405/index.m3u8
-#EXTINF:-1 tvg-id="25" tvg-name="CGTN" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTN.png" group-title="央视频道",CGTN
-http://39.134.144.6:8089/PLTV/88888888/224/3221226320/index.m3u8
 #EXTINF:-1 tvg-id="29" tvg-name="CGTN纪录" tvg-logo="https://pic.erw.cc/epglogo/cctv/CGTNDoc.png" group-title="央视频道",CGTN纪录
 http://39.134.144.6:8089/PLTV/88888888/224/3221226401/index.m3u8
 #EXTINF:-1 tvg-id="77" tvg-name="重庆卫视" tvg-logo="https://pic.erw.cc/epglogo/weishi/Chongqing.png" group-title="卫视频道",重庆卫视

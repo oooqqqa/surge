@@ -6,7 +6,8 @@ CUSTOM_RULES_LIST=".jddebug.com
 ntp.nasa.gov
 av.samsungiotcloud.cn
 safebrowsing.urlsec.qq.com
-safebrowsing.googleapis.com"
+safebrowsing.googleapis.com
+safebrowsing.googleapis-cn.com"
 
 # 第三方规则源
 URL1="https://big.oisd.nl/"

@@ -16,7 +16,7 @@ URL3="https://raw.githubusercontent.com/geekdada/surge-list/refs/heads/master/do
 URL4="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-surge2.txt"
 
 # 输出路径
-OUTPUT="surge/reject.txt"
+OUTPUT="reject.txt"
 
 # 创建临时文件
 TMP1=$(mktemp)
@@ -51,7 +51,6 @@ grep -vE '^\s*($|#)' "$TMP4" > "$PROC4"
 echo "$CUSTOM_RULES_LIST" | grep -vE '^\s*($|#)' > "$CUSTOM_TMP"
 
 # 合并去重，优先保留自定义规则
-mkdir -p "$(dirname "$OUTPUT")"
 cat "$CUSTOM_TMP" "$PROC1" "$PROC2" "$PROC3" "$PROC4" | awk '!seen[$0]++' > "$OUTPUT"
 
 # 统计信息

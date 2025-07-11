@@ -15,6 +15,9 @@ DOMAIN-SUFFIX,tw
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-KEYWORD,discord
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,dockerhub.com
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbcdn.com

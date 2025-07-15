@@ -25,6 +25,10 @@ DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,gitbook.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,ggpht.com
@@ -36,7 +40,9 @@ DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,steamcommunity.com
+
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,ttvnw.net

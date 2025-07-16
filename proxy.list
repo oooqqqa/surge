@@ -1,6 +1,9 @@
 DOMAIN-SUFFIX,a2z.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-KEYWORD,amazon
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,tw
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
@@ -29,6 +32,13 @@ DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,doubleclick.com
 DOMAIN-KEYWORD,google
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.netword
+DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com

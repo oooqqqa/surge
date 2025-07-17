@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,thetvdb.com
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,agedm.org
+DOMAIN-SUFFIX,infiniteapi.com
+DOMAIN-SUFFIX,ifn.watch
 DOMAIN-KEYWORD,discord
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,docker.com

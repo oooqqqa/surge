@@ -1,6 +1,7 @@
 USER-AGENT,"MicroMessenger Client"
 
 DOMAIN-SUFFIX,cn
+DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,ntp.org
 
 DOMAIN-KEYWORD,apple

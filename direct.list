@@ -7,3 +7,5 @@ DOMAIN-SUFFIX,ntp.org
 DOMAIN-KEYWORD,apple
 DOMAIN-KEYWORD,icloud
 DOMAIN-KEYWORD,samsung
+
+IP-ASN,132203,no-resolve

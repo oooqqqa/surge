@@ -32,7 +32,7 @@ jobs:
       # 第四步：检查是否有变更，若有则提交并推送
       - name: Commit and push if changes exist
         run: |
-          git add reject.txt
+          git add reject.txt reject_mini.txt
           git diff --cached --quiet && echo "No changes to commit." && exit 0
           git commit -m "Update adblock rules"
           git push
